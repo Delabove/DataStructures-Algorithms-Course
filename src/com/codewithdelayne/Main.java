@@ -11,6 +11,7 @@ public class Main {
        cities.insert("Arlington");
        cities.removeAt(3);
        cities.print();
+        System.out.println(cities.findIndex("Addison"));
 
     }
 }

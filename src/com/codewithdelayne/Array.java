@@ -11,9 +11,6 @@ public class Array {
         cities = new String[length];
     }
 
-
-
-
     public void insert(String city){
 
         if(cities.length == count){
@@ -27,24 +24,25 @@ public class Array {
             cities[count++] = city;
     }
 
-
-    //REMOVE -DELETE
     public void removeAt(int index){
-//       validate boundaries
         if(index < 0 || index > count){
             throw new IllegalArgumentException();
         }
-
-//        fill empty cells by shifting remaining items
         for(int i = index; i < count; i++){
             cities[i] = cities[i + 1];
             count--;
         }
     }
 
-
-
     //INDEX
+    public int findIndex(String city){
+        for(int i = 0; i < count; i++){
+            if(cities[i] == city){
+                return i;
+            }
+        }
+        return -1;
+    }
 
     public void print(){
         for(int i = 0; i < count; i++) {
