@@ -28,6 +28,17 @@ public class Array {
             numbers[count++] = number;
     }
 
+    public void remove(int index){
+//        validate boundaries
+        if(index < 0 || index > count){
+            throw new IllegalArgumentException();
+        }
+
+        for(int i = index; i < count; i++)
+            numbers[i] = numbers[i+1];
+            count--;
+    }
+
 
     public void print() {
         for (int i = 0; i < count; i++)
