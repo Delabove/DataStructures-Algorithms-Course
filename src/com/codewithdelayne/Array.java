@@ -1,10 +1,13 @@
 package com.codewithdelayne;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Array {
     private int[] numbers;
     private int count;
+
 
     public Array(int length) {
         numbers = new int[length];
@@ -47,6 +50,15 @@ public class Array {
             }
         return -1;
     }
+
+    public int max() {
+       int max = 0;
+       for(int number : numbers)
+           if(number> max)
+               max = number;
+           return max;
+    }
+
 
     public void print() {
         for (int i = 0; i < count; i++)
