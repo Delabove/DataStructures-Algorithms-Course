@@ -9,6 +9,7 @@ public class Main {
        cities.insert("Lafayette");
        cities.insert("Addison");
        cities.insert("Arlington");
+       cities.removeAt(3);
        cities.print();
 
     }
