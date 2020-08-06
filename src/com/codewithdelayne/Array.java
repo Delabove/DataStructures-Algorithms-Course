@@ -51,13 +51,23 @@ public class Array {
         return -1;
     }
 
-    public int max() {
-       int max = 0;
-       for(int number : numbers)
-           if(number> max)
-               max = number;
-           return max;
-    }
+  public int max(){
+        int max = 0;
+        for(int number : numbers)
+            if(number > max){
+                max = number;
+            }
+        return max;
+  }
+
+  public Array intersection( Array arr2){
+        var intersection = new Array(count);
+        for(int number : numbers)
+            if(arr2.indexOf(number) >= 0){
+                intersection.insert(number);
+            }
+        return intersection;
+  }
 
 
     public void print() {

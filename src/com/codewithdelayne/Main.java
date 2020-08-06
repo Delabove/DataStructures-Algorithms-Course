@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
        Array numbers = new Array(3);
+
        numbers.insert(10);
        numbers.insert(20);
        numbers.insert(30);
@@ -15,8 +16,10 @@ public class Main {
        numbers.insert(50);
        numbers.remove(2);
        numbers.print();
+
         System.out.println(numbers.indexOf(10));
         System.out.println(numbers.max());
+//        System.out.println(numbers.intersection()); FIGURE OUT HOW TO TEST?
 
 
 
