@@ -15,11 +15,13 @@ public class Main {
        numbers.insert(40);
        numbers.insert(50);
        numbers.remove(2);
-       numbers.print();
+       numbers.reverse();
+//       numbers.print();
 
         System.out.println(numbers.indexOf(10));
         System.out.println(numbers.max());
 //        System.out.println(numbers.intersection()); FIGURE OUT HOW TO TEST?
+
 
 
 

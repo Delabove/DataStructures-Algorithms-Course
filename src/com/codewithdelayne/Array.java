@@ -59,6 +59,12 @@ public class Array {
             }
         return max;
   }
+  public void reverse(){
+        int[] reversedArray = new int[count];
+        for(int i = 0; i < count; i++)
+            reversedArray[i] = numbers[count - i - 1];
+        numbers = reversedArray;
+  }
 
   public Array intersection( Array arr2){
         var intersection = new Array(count);
@@ -68,6 +74,18 @@ public class Array {
             }
         return intersection;
   }
+//    public void insertAt(int number, int index) {
+//        if (index < 0 || index > count)
+//            throw new IllegalArgumentException();
+//
+//        // Note that I've extracted the logic for
+//        // resizing the array into this private
+//        // method so we can reuse in insert() and
+//        // insertAt() methods.
+//        //
+//        // This also made our code cleaner and
+//        // more readable.
+//        resizeIfRequired();
 
 
     public void print() {
