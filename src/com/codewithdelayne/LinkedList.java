@@ -63,6 +63,14 @@ public class LinkedList {
             return -1;
     }
 
+    public void removeFirst(){
+        var second = first.next;
+        first.next = null;
+        first = second;
+    }
+
+
+
     public boolean contains(int item){
         return indexOf(item) != -1;
     }

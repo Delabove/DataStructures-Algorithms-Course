@@ -29,7 +29,7 @@ public class Main {
         list.addLast(2);
         list.addLast(3);
         list.addLast(4);
-
+        list.removeFirst();
         System.out.println( list.indexOf(2));
         System.out.println(list.contains(5));
 
