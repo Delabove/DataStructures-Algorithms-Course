@@ -11,24 +11,16 @@ public class LinkedList {
             this.value = value;
 
         }
-    }
-
-
+   }
 
     private Node first;
     private Node last;
 
     //ADD LAST
-
-    //link to previous node
-
     public void addLast(int item){
-        //create node object
         var node = new Node(item);
-        //insert into last -first check if empty
         if(first == null){
             first = last = node;
-            //link to tail
         } else {
             last.next = node;
             last = node;
@@ -48,6 +40,26 @@ public class LinkedList {
 
     }
 
+    // INDEX OF (traverse through the list from beginning to end and return in dex of the item param when you find it)
 
+    //declare index var
+    //declare a current placeholder variable
+    //check if null
+    //check value of current node is equal to index
+    //increment
+    //return statement if does not match
+    //test
+
+    public int indexOf(int item){
+        var index = 0;
+        var current = first;
+
+        while (current != null){
+           if (current.value  == item) return index;
+           current = current.next;
+           index++;
+        }
+        return -1;
+    }
 
 }
