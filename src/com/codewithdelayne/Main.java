@@ -23,8 +23,11 @@ public class Main {
 //        System.out.println(numbers.intersection()); FIGURE OUT HOW TO TEST?
 
 
-
-
+        var list = new LinkedList();
+        list.addLast(1);
+        list.addLast(2);
+        list.addLast(3);
+        list.addLast(4);
     }
 
 
