@@ -31,8 +31,20 @@ public class LinkedList {
             //link to tail
         } else {
             last.next = node;
+            last = node;
+        }
 
-        } last = node;
+    }
+
+    public void addFirst(int item){
+        var node = new Node (item);
+
+        if(first == null){
+            first = last = node;
+        } else{
+            node.next = first;
+            first = node;
+        }
 
     }
 

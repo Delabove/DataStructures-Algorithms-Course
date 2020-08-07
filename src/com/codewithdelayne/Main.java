@@ -24,10 +24,13 @@ public class Main {
 
 
         var list = new LinkedList();
+        list.addFirst(10);
         list.addLast(1);
         list.addLast(2);
         list.addLast(3);
         list.addLast(4);
+
+
     }
 
 
