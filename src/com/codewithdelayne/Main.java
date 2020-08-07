@@ -31,6 +31,7 @@ public class Main {
         list.addLast(4);
 
         System.out.println( list.indexOf(2));
+        System.out.println(list.contains(5));
 
     }
 
