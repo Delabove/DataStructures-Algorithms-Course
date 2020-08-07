@@ -50,16 +50,18 @@ public class LinkedList {
     //return statement if does not match
     //test
 
-    public int indexOf(int item){
+    public int indexOf(int item) {
         var index = 0;
         var current = first;
+        while (current != null) {
+            if (current.value == item)
+                return index;
+                current = current.next;
+                index++;
 
-        while (current != null){
-           if (current.value  == item) return index;
-           current = current.next;
-           index++;
         }
-        return -1;
+            return -1;
     }
-
 }
+
+
