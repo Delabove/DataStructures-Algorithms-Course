@@ -33,6 +33,11 @@ public class Main {
         System.out.println( list.indexOf(2));
         System.out.println(list.contains(5));
 
+        String str = "abc";
+
+        StringReverser reverser= new StringReverser();
+        var result = reverser.reverse(null);
+        System.out.println(result);
     }
 
 
