@@ -66,8 +66,15 @@ public class Array {
             }
         return intersection;
   }
+    public int diff21(int n) {
+        if(n > 21){
+            return (n - 21) * 2;
+        }
+        return (21 - n);
+    }
 
- // REVIEW THIS ONE
+
+    // REVIEW THIS ONE
 //    public void insertAt(int number, int index) {
 //        if (index < 0 || index > count)
 //            throw new IllegalArgumentException();
