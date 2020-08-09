@@ -73,6 +73,13 @@ public class Array {
         return (21 - n);
     }
 
+    public int sumDouble(int a, int b) {
+        if(a == b){
+            return (a+b)*2;
+        }
+        return(a+b);
+    }
+
 
     // REVIEW THIS ONE
 //    public void insertAt(int number, int index) {
