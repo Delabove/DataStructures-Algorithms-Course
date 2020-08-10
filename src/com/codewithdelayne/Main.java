@@ -44,9 +44,6 @@ public class Main {
         nums.insertNums(4);
         nums.insertNums(5);
         nums.reverseNums();
-        nums.printNums();
-
-
 
     }
 

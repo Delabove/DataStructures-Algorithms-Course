@@ -1,5 +1,7 @@
 package com.codewithdelayne;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.lang.reflect.Array;
 
 public class PracticeProblems {
@@ -28,6 +30,10 @@ public class PracticeProblems {
          for (int i = 0; i < counter; i++)
              reversedNumbers[i] = nums[counter - i -1];
             nums = reversedNumbers;
+
+        for(int i = 0; i< nums.length; i++) {
+            System.out.print(" " + nums[i] + " ");
+        }
     }
 
 
