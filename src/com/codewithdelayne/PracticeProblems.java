@@ -20,12 +20,15 @@ public class PracticeProblems {
                 nums = newNums;
         }
 
-
         nums[counter++] = num;
     }
 
-
-
+    public void reverseNums(){
+        int[] reversedNumbers = new int[counter];
+         for (int i = 0; i < counter; i++)
+             reversedNumbers[i] = nums[counter - i -1];
+            nums = reversedNumbers;
+    }
 
 
     public void printNums() {
