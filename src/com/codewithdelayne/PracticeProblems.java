@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 
 public class PracticeProblems {
 
-    private int [] nums;
+    private int[] nums;
     private int counter;
 
     public PracticeProblems(int length) {
@@ -13,15 +13,13 @@ public class PracticeProblems {
     }
 
     public void insertNums(int num) {
-        if(nums.length == counter){
+        if(nums.length == counter) {
             int[] newNums = new int[counter * 2];
-            for(int i = 0; i<= counter; i++){
+            for (int i = 0; i < counter; i++)
                 newNums[i] = nums[i];
-
                 nums = newNums;
-            }
-
         }
+
 
         nums[counter++] = num;
     }

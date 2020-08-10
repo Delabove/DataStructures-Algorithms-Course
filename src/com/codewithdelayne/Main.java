@@ -41,6 +41,8 @@ public class Main {
         nums.insertNums(1);
         nums.insertNums(2);
         nums.insertNums(3);
+        nums.insertNums(4);
+        nums.insertNums(5);
         nums.printNums();
 
 
