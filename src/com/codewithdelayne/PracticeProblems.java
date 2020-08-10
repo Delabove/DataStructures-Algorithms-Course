@@ -33,7 +33,12 @@ public class PracticeProblems {
 
         for(int i = 0; i< nums.length; i++) {
             System.out.print(" " + nums[i] + " ");
+
+//            for(int i = nums.length-2; i >= 0; i--) {
+//                System.out.print(" " + nums[i] + " ");
+//            }
         }
+
     }
 
 
@@ -41,6 +46,7 @@ public class PracticeProblems {
         for (int i = 0; i < counter; i++)
             System.out.println(nums[i]);
     }
+
 
 
 }

@@ -37,6 +37,7 @@ public class Main {
 
 //
 
+
         PracticeProblems nums = new PracticeProblems(3);
         nums.insertNums(1);
         nums.insertNums(2);
