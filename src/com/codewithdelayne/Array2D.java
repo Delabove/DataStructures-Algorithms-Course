@@ -1,16 +1,11 @@
 package com.codewithdelayne;
+import java.util.Arrays;
 
 import java.util.Arrays;
 
 public class Array2D {
 
     public static int hourglass(int[][] arr) {
-
-        //Max Sum
-
-
-        //update
-        //end when length has been reached and max has been found
 
         //start -current max
         int MAX_VALUE = -63;
@@ -21,12 +16,9 @@ public class Array2D {
         {
             for (int j = 0; j <= 3; j++) //COLUMN
             {    //calculate sum//
-                currentSum = currentSum + arr[i][j];
-                System.out.print(arr[i][j] + " ");
-
-                //compare current sum with start max value
+                System.out.println( currentSum = arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]);
+                //update
                 MAX_VALUE = Math.max(MAX_VALUE, currentSum);
-
 
             }
         }
@@ -34,11 +26,15 @@ public class Array2D {
 
     }
 
-
-
     public static void main(String[] args) {
 
-        int[][] arr =
+        int[][] arr = { { 1, 1, 1, 0, 0, 0 },
+                { 0, 0, 1, 0, 0, 0  },
+                { 1, 1, 1, 0, 0, 0  },
+                { 0, 0, 0, 0, 0, 0  },
+                { 0, 0, 0, 0, 0, 0  },
+                { 0, 0, 1, 0, 0, 0  } };
+
         hourglass(arr);
     }
 
