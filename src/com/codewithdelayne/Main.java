@@ -35,9 +35,15 @@ public class Main {
 
         String str = "abc";
 
-        StringReverser reverser= new StringReverser();
-        var result = reverser.reverse(null);
-        System.out.println(result);
+//
+
+        PracticeProblems nums = new PracticeProblems(3);
+        nums.insertNums(1);
+        nums.insertNums(2);
+        nums.insertNums(3);
+        nums.printNums();
+
+
     }
 
 
