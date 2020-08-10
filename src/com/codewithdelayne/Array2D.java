@@ -16,7 +16,7 @@ public class Array2D {
         {
             for (int j = 0; j <= 3; j++) //COLUMN
             {    //calculate sum//
-                System.out.println( currentSum = arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]);
+                currentSum = (arr[i][j] + arr[i][j+1] + arr[i][j+2] + arr[i+1][j+1] + arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]);
                 //update
                 MAX_VALUE = Math.max(MAX_VALUE, currentSum);
 
@@ -27,15 +27,23 @@ public class Array2D {
     }
 
     public static void main(String[] args) {
-
-        int[][] arr = { { 1, 1, 1, 0, 0, 0 },
-                { 0, 0, 1, 0, 0, 0  },
-                { 1, 1, 1, 0, 0, 0  },
-                { 0, 0, 0, 0, 0, 0  },
-                { 0, 0, 0, 0, 0, 0  },
-                { 0, 0, 1, 0, 0, 0  } };
-
-        hourglass(arr);
+        int[][] arr = new int[6][6];
+        int numDigits = (int) Math.log10(hourglass(arr)) + 1;
+        if (numDigits <= 1) {
+            numDigits = 2;
+        }
+        StringBuffer buf = new StringBuffer();
+        for (int i = 0; i < 6; i++) {
+            int[] row = arr[i];
+            for (int j = 0; j < 6; j++) {
+                int block = row[j];
+                buf.append(String.format("%" + numDigits + "d", block));
+                if (j >= row.length - 1) {
+                    buf.append("\n");
+                }
+            }
+        }
+        System.out.println(buf.toString()); ;
     }
 
 
